@@ -36,7 +36,7 @@
     $responsavel = $_POST["responsavel"];
 
 
-    $arquivo = fopen("responsavel.txt", "a");
+    $arquivo = fopen("responsavel.txt", "w");
 
         fwrite($arquivo, $tarefa . "\t");
         fwrite($arquivo, $responsavel . "\n");
